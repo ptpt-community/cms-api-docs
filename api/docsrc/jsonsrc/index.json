@@ -1,0 +1,13 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "$ref": "./info/index.json"
+  },
+  "paths": {
+    "$ref": "./paths/index.json"
+  },
+  "definitions": {
+    "$ref": "./definitions/index.json"
+  }
+}
+
