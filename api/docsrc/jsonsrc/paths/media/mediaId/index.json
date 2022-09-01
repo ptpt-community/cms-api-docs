@@ -1,0 +1,60 @@
+{
+      "get": {
+        "description": "Get specific post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "mediaId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "succesful",
+            "schema": {
+              "$ref": "#/definitions/PageResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "parameters": [
+          {
+            "name": "mediaId",
+            "in": "path",
+            "description": "PK of post",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/PostParams"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "succesful"
+          }
+        }
+      },
+      "delete": {
+        "parameters": [
+          {
+            "name": "mediaId",
+            "in": "path",
+            "description": "PK of post",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "succesful"
+          }
+        }
+      }
+    }
