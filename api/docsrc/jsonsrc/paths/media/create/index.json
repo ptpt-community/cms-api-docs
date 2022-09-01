@@ -1,0 +1,23 @@
+{
+      "post": {
+        "description": "Upload media",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/PostParams"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "succesful"
+          }
+        }
+      }
+    }

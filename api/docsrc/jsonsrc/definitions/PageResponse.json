@@ -1,0 +1,16 @@
+{
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "string"
+        },
+        "file": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "$ref": "#/definitions/FilePath"
+            }
+          }
+        }
+      }
+    }
