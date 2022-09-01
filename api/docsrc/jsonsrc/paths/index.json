@@ -1,5 +1,8 @@
-{/foo:
-	{$ref: ./foo.json},
-/bar:
-	{$ref: ./bar.json}
+{
+  "/foo": {
+    "$ref": "./foo.json"
+  },
+  "/bar": {
+    "$ref": "./bar.json"
+  }
 }
