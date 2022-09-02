@@ -1,0 +1,72 @@
+{
+  "post": {
+    "tags": [
+      "content"
+    ],
+    "summary": "Add a new content",
+    "description": "",
+    "operationId": "addContent",
+    "consumes": [
+      "application/json",
+      "application/xml"
+    ],
+    "produces": [
+      "application/xml",
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "body",
+        "name": "body",
+        "description": "Add new content",
+        "required": true,
+        "schema": {
+          "$ref": "#/definitions/entry"
+        }
+      }
+    ],
+    "responses": {
+      "405": {
+        "description": "Invalid input"
+      }
+    }
+  },
+  "put": {
+    "tags": [
+      "content"
+    ],
+    "summary": "Update an existing content",
+    "description": "",
+    "operationId": "updateContent",
+    "consumes": [
+      "application/json",
+      "application/xml"
+    ],
+    "produces": [
+      "application/xml",
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "body",
+        "name": "body",
+        "description": "Edit Content",
+        "required": true,
+        "schema": {
+          "$ref": "#/definitions/entry"
+        }
+      }
+    ],
+    "responses": {
+      "400": {
+        "description": "Invalid ID supplied"
+      },
+      "404": {
+        "description": "Pet not found"
+      },
+      "405": {
+        "description": "Validation exception"
+      }
+    }
+  }
+}

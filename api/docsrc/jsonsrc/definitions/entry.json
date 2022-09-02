@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "example": "entry-01",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
