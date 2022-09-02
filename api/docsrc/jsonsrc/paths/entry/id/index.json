@@ -1,0 +1,62 @@
+{
+  "get": {
+    "tags": [
+      "content"
+    ],
+    "summary": "Read one entry",
+    "description": "Returns a single content",
+    "operationId": "findContentsById",
+    "produces": [
+      "application/xml",
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "description": "“read one entry\"",
+        "required": true,
+        "type": "string"
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "successful operation",
+        "schema": {
+          "items": {
+            "$ref": "#/definitions/entry"
+          }
+        }
+      }
+    }
+  },
+  "delete": {
+    "tags": [
+      "content"
+    ],
+    "summary": "Deletes a content",
+    "description": "",
+    "operationId": "deleteContent",
+    "produces": [
+      "application/xml",
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "name": "id",
+        "in": "path",
+        "description": "Delete Content",
+        "required": true,
+        "type": "string"
+      }
+    ],
+    "responses": {
+      "400": {
+        "description": "Invalid ID supplied"
+      },
+      "404": {
+        "description": "Pet not found"
+      }
+    }
+  }
+}
