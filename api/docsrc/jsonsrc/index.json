@@ -4,7 +4,7 @@
     "$ref": "./info/index.json"
   },
   "paths": {
-    "$ref": "./paths/index.json"
+    "$ref": "./paths/index_generated.json"
   },
   "definitions": {
     "$ref": "./definitions/index.json"
