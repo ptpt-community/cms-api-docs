@@ -17,6 +17,10 @@ integrate () {
      echo "{${integrated:0:-1}}"
 }
 
+HOME_DIR=$PWD;
+cd $HOME_DIR/api/docsrc/jsonsrc/paths/;
+
 integrate|jq >index_generated.json
 
+cd $HOME_DIR;
 
