@@ -2,7 +2,7 @@
   "/media/{mediaId}": {
     "$ref": "./mediaId/index.json"
   },
-  "/media/create": {
-    "$ref": "./create/index.json"
+  "/media/": {
+    "$ref": "./this.json"
   }
 }
