@@ -1,1 +1,2 @@
-npx json-refs resolve api/docsrc/jsonsrc/index.json -y --force > api/swagger/swagger.yaml
+./scripts/main_build.sh > api/swagger/swagger.yaml
+
