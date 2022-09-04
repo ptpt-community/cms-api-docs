@@ -7,16 +7,16 @@ link_path () {
 }
 
 integrate () {
+    readarray -t paths < paths.path;
     integrated=$(
-    for single_path in "$@"; do
+    for single_path in ${paths[@]}; do
 	link_path "$single_path";
 	echo ","; 
      done);
+
      echo "{${integrated:0:-1}}"
 }
 
-integrate \
-"media/index.json" \
-"entry/index.json" \
+integrate|jq >index_generated.json
 
 
