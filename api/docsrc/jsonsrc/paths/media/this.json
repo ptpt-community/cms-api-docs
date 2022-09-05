@@ -1,23 +1,59 @@
 {
-      "post": {
-        "description": "Upload media",
-        "produces": [
-          "application/xml",
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
-              "$ref": "#/definitions/PostParams"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "succesful"
-          }
-        }
+  "get": {
+    "description": "Get media",
+    "produces": [
+      "application/xml",
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "query",
+        "name": "file",
+        "type": "string",
+        "description": "The media file",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "folder",
+        "type": "string",
+        "description": "The folder path to fetch media recursively",
+        "required": false
+      },
+      {
+        "in": "query",
+        "name": "depth",
+        "type": "integer",
+        "format": "int32",
+        "description": "Maximum path depth to fetch unto which we fetch files",
+        "required": false
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "succesful"
       }
     }
+  },
+  "post": {
+    "description": "Upload media",
+    "produces": [
+      "application/xml",
+      "application/json"
+    ],
+    "parameters": [
+      {
+        "in": "body",
+        "name": "body",
+        "schema": {
+          "$ref": "#/definitions/PostParams"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "succesful"
+      }
+    }
+  }
+}
