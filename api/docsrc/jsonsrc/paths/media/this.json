@@ -27,6 +27,13 @@
         "format": "int32",
         "description": "Maximum path depth to fetch unto which we fetch files",
         "required": false
+      },
+      {
+        "in": "query",
+        "name": "branch",
+        "type": "string",
+        "description": "The branch to fetch resources from",
+        "required": false
       }
     ],
     "responses": {
