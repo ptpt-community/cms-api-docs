@@ -1,11 +1,18 @@
 {
+  "properties": {
+    "data": {
+      "type": "string"
+    },
+    "file": {
       "type": "object",
       "properties": {
         "path": {
           "type": "string"
         },
-        "id": {
+        "sha": {
           "type": "string"
         }
       }
     }
+  }
+}
