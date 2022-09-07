@@ -70,7 +70,13 @@
     ],
     "responses": {
       "200": {
-        "description": "succesful"
+        "description": "OK",
+        "schema": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FilePath"
+          }
+        }
       }
     }
   },
