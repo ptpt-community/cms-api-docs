@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "sha": {
+      "type": "string"
+    },
+    "encoding": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

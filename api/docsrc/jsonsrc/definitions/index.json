@@ -8,6 +8,9 @@
   "FilePath": {
     "$ref": "./FilePath.json"
   },
+  "MediaPath": {
+    "$ref": "./MediaPath.json"
+  },
   "entry": {
     "$ref": "./entry.json"
   }
