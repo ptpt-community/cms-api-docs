@@ -24,7 +24,7 @@
         "description": "successful operation",
         "schema": {
           "items": {
-            "$ref": "#/definitions/entry"
+            "$ref": "#/definitions/FilePath"
           }
         }
       }

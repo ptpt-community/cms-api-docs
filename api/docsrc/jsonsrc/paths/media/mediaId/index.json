@@ -13,7 +13,7 @@
           "200": {
             "description": "succesful",
             "schema": {
-              "$ref": "#/definitions/PageResponse"
+              "$ref": "#/definitions/MediaPath"
             }
           }
         }
