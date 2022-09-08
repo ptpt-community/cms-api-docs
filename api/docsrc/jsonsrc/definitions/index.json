@@ -2,9 +2,6 @@
   "PostParams": {
     "$ref": "./PostParams.json"
   },
-  "PageResponse": {
-    "$ref": "./PageResponse.json"
-  },
   "FilePath": {
     "$ref": "./FilePath.json"
   },
