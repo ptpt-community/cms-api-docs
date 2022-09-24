@@ -7,7 +7,7 @@ link_path () {
 }
 
 integrate () {
-    readarray -t paths < paths.path;
+    IFS=$'\n' read -d '' -r -a paths < paths.path
     integrated=$(
     for single_path in ${paths[@]}; do
 	link_path "$single_path";
