@@ -1,7 +1,7 @@
 # Cms-Api-Docs
 Dependencies:
 
-`readarray`, `jq`
+jq
 
 Build:
 
