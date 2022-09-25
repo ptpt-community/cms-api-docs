@@ -3,8 +3,8 @@
     "tags": [
       "content"
     ],
-    "summary": "Add a new content",
-    "description": "",
+    "summary": "Add a new entry",
+    "description": "Post a new entry. The entry will be used as a source of a webpage",
     "operationId": "addContent",
     "consumes": [
       "application/json",
@@ -32,7 +32,7 @@
     }
   },
   "get": {
-    "description": "Get file",
+    "description": "Fetch array of entries from the server",
     "produces": [
       "application/xml",
       "application/json"
@@ -42,14 +42,14 @@
         "in": "query",
         "name": "file",
         "type": "string",
-        "description": "Fetch the file",
+        "description": "Fetch the given entry (File)",
         "required": false
       },
       {
         "in": "query",
         "name": "folder",
         "type": "string",
-        "description": "The folder path to fetch files recursively",
+        "description": "Fetch the entries (files) from a certain folder",
         "required": false
       },
       {
@@ -57,14 +57,14 @@
         "name": "depth",
         "type": "integer",
         "format": "int32",
-        "description": "Maximum path depth to fetch unto which we fetch files",
+        "description": "Maximum path depth to fetch unto which we fetch entries (files)",
         "required": false
       },
       {
         "in": "query",
         "name": "branch",
         "type": "string",
-        "description": "The branch to fetch resources from",
+        "description": "Select the branch to fetch resources from, default: main",
         "required": false
       }
     ],
@@ -77,44 +77,6 @@
             "$ref": "#/definitions/FilePath"
           }
         }
-      }
-    }
-  },
-  "put": {
-    "tags": [
-      "content"
-    ],
-    "summary": "Update an existing content",
-    "description": "",
-    "operationId": "updateContent",
-    "consumes": [
-      "application/json",
-      "application/xml"
-    ],
-    "produces": [
-      "application/xml",
-      "application/json"
-    ],
-    "parameters": [
-      {
-        "in": "body",
-        "name": "body",
-        "description": "Edit Content",
-        "required": true,
-        "schema": {
-          "$ref": "#/definitions/entry"
-        }
-      }
-    ],
-    "responses": {
-      "400": {
-        "description": "Invalid ID supplied"
-      },
-      "404": {
-        "description": "Pet not found"
-      },
-      "405": {
-        "description": "Validation exception"
       }
     }
   }
