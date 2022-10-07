@@ -49,9 +49,23 @@
       {
         "name": "id",
         "in": "path",
-        "description": "Delete Content",
+        "description": "Content Id",
         "required": true,
         "type": "string"
+      },
+      {
+        "in": "body",
+        "name": "body",
+        "description": "New content",
+        "required": true,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string"
+            }
+          }
+        }
       }
     ],
     "responses": {

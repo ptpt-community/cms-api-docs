@@ -58,8 +58,17 @@
       {
         "in": "body",
         "name": "body",
+        "required": true,
         "schema": {
-          "$ref": "#/definitions/PostParams"
+          "type": "object",
+          "properties": {
+            "content": {
+              "type": "string"
+            },
+            "path": {
+              "type": "string"
+            }
+          }
         }
       }
     ],
