@@ -73,7 +73,7 @@
         "description": "Invalid ID supplied"
       },
       "404": {
-        "description": "Pet not found"
+        "description": "Entry not found"
       },
       "405": {
         "description": "Validation exception"
@@ -105,7 +105,7 @@
         "description": "Invalid ID supplied"
       },
       "404": {
-        "description": "Pet not found"
+        "description": "Entry not found"
       }
     }
   }
